@@ -1,4 +1,4 @@
 package restaurantmanagementapp;
 
-public class SignUpController {
+public class LoggedInController{
 }
