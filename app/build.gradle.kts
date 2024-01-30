@@ -16,23 +16,23 @@ repositories {
 }
 
 dependencies {
-    implementation(group = "org.openjfx", name = "javafx-base", version = "21.0.1", classifier = platform)
-    implementation(group = "org.openjfx", name = "javafx-graphics", version = "21.0.1", classifier = platform)
-    implementation(group = "org.openjfx", name = "javafx-controls", version = "21.0.1", classifier = platform)
-    implementation(group = "org.openjfx", name = "javafx-fxml", version = "21.0.1", classifier = platform)
-    implementation(group = "org.openjfx", name = "javafx-web", version = "21.0.1", classifier = platform)
+    implementation(group = "org.openjfx", name = "javafx-base", version = "17.0.9", classifier = platform)
+    implementation(group = "org.openjfx", name = "javafx-graphics", version = "17.0.9", classifier = platform)
+    implementation(group = "org.openjfx", name = "javafx-controls", version = "17.0.9", classifier = platform)
+    implementation(group = "org.openjfx", name = "javafx-fxml", version = "17.0.9", classifier = platform)
+    implementation(group = "org.openjfx", name = "javafx-web", version = "17.0.9", classifier = platform)
 
     testImplementation(group = "org.junit.jupiter", name = "junit-jupiter", version = "5.9.3")
 }
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(21))
+        languageVersion.set(JavaLanguageVersion.of(17))
     }
 }
 
 application {
-    mainClass.set("restaurantmanagementapp.App")
+    mainClass.set("lp.awrsp.assessment.project.gr.AppApplicationRunner")
 }
 
 tasks.named<Test>("test") {
